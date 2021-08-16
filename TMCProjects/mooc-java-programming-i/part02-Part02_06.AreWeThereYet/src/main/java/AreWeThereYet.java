@@ -7,7 +7,7 @@ public class AreWeThereYet {
         Scanner scanner = new Scanner(System.in);
         while(true){
             System.out.println("Give a number:");
-            int answer = Integer.valueOf(scanner.nextLine());
+            int answer = Integer.parseInt(scanner.nextLine());
             if(answer==4){
                 break;
             }
