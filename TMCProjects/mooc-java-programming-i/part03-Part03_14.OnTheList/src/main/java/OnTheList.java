@@ -11,6 +11,12 @@ public class OnTheList {
         while (true) {
             String input = scanner.nextLine();
             if (input.equals("")) {
+                System.out.println("Search for? ");
+                String search = String.valueOf(scanner.nextLine());
+                if(list.contains(search))
+                    System.out.println(search + " was found");
+                else
+                    System.out.println(search + " was not found!");
                 break;
             }
 
