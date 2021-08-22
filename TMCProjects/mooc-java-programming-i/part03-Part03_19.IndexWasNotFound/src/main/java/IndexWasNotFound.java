@@ -6,7 +6,7 @@ public class IndexWasNotFound {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int[] array = new int[10];
+        int[] array = new int[8];
         array[0] = 6;
         array[1] = 2;
         array[2] = 8;
@@ -18,6 +18,13 @@ public class IndexWasNotFound {
 
         System.out.print("Search for? ");
         int searching = Integer.valueOf(scanner.nextLine());
+        for(int i=0;i<array.length;i++){
+            if(array[i]==searching){
+                System.out.println(searching+" is at index "+i+".");
+            }else{
+                System.out.println(searching+" was not found.");
+            }
+        }
 
         // Implement the search functionality here
     }
